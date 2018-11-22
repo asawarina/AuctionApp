@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAuction">
+
+    <TextView
+        android:id="@+id/text0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Create Auction"
+        android:textSize="30dp"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/PrdctName"
+        android:layout_below="@+id/text0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp"
+        android:inputType="text"/>
+
+    <EditText
+    android:id="@+id/Description"
+    android:layout_below="@+id/PrdctName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Product Description"
+
+    android:layout_marginLeft="10dp"
+    android:textSize="25dp"
+    android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/MinPrice"
+        android:layout_below="@+id/Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Minimum Price"
+
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auction Starts At:"
+        android:layout_below="@+id/MinPrice"
+        android:textSize="25dp"
+
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+    android:id="@+id/startDate"
+    android:layout_below="@id/text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="yyyy-mm-dd"
+    android:textSize="30dp"
+    android:inputType="date"
+    android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/startTime"
+        android:layout_below="@id/text"
+        android:layout_toRightOf="@id/startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="hh:mm"
+        android:textSize="30dp"
+        android:inputType="time"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auction Closes in (hrs):"
+        android:layout_below="@+id/startDate"
+        android:textSize="25dp"
+
+        android:layout_marginLeft="15dp"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>
